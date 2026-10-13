@@ -1,0 +1,84 @@
+general.import = [
+    "~/.config/alacritty/themes/themes/coolnight.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["--login"]
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+
+opacity = 0.7
+blur = true
+
+option_as_alt = "Both"
+
+[selection]
+save_to_clipboard = true
+
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+
+size = 18
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 500
+
+[scrolling]
+history = 10000
+multiplier = 5
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  # Option + Left/Right — move word by word
+  { key = "Left",  mods = "Alt", chars = "\x1bb" },
+  { key = "Right", mods = "Alt", chars = "\x1bf" },
+
+  # Cmd + Left/Right — move to beginning/end of line
+  { key = "Left",  mods = "Super", chars = "\x01" },
+  { key = "Right", mods = "Super", chars = "\x05" },
+
+  # Cmd + Backspace — delete entire line
+  { key = "Back", mods = "Super", chars = "\x15" },
+
+  # Option + Backspace — delete word
+  { key = "Back", mods = "Alt", chars = "\x1b\x7f" },
+
+  # Cmd + Z — undo
+  { key = "Z", mods = "Super", chars = "\x1f" },
+
+  # Copy / Paste
+  { key = "C", mods = "Super", action = "Copy" },
+  { key = "V", mods = "Super", action = "Paste" },
+
+  # Cmd + K — clear screen
+  { key = "K", mods = "Super", chars = "\x0c" },
+
+  # Cmd + F — search forward
+  { key = "F", mods = "Super", action = "SearchForward" },
+
+  # Cmd + Home/End — scroll to top/bottom
+  { key = "Home", mods = "Super", action = "ScrollToTop" },
+  { key = "End",  mods = "Super", action = "ScrollToBottom" },
+
+  # Cmd + N / Q — new window / quit
+  { key = "N", mods = "Super", action = "SpawnNewInstance" },
+  { key = "Q", mods = "Super", action = "Quit" },
+
+  # Cmd + +/-/0 — font size
+  { key = "Equals", mods = "Super", action = "IncreaseFontSize" },
+  { key = "Minus",  mods = "Super", action = "DecreaseFontSize" },
+  { key = "Key0",   mods = "Super", action = "ResetFontSize" },
+]

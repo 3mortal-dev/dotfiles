@@ -1,0 +1,27 @@
+# JellyFish Theme for Ghostty
+# Author: Pawel Borkar
+# Repository: https://github.com/pawelborkar/vscode-jellyfish
+
+palette = 0=#00002c
+palette = 1=#ff0062
+palette = 2=#00ff55
+palette = 3=#ffd900
+palette = 4=#829fff
+palette = 5=#FA1F6C
+palette = 6=#00ffff
+palette = 7=#9b9b9b
+palette = 8=#3a3a5c
+palette = 9=#FF5370
+palette = 10=#00ffb3
+palette = 11=#eeff00
+palette = 12=#00d9ff
+palette = 13=#ff0080
+palette = 14=#00f7ff
+palette = 15=#ffffff
+
+background = #00002c
+foreground = #FF92A5
+cursor-color = #00f7ff
+cursor-text = #00002c
+selection-background = #8bb4be
+selection-foreground = #00002c
